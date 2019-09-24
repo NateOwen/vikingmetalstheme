@@ -1,0 +1,89 @@
+/**** NATE ****/
+@-webkit-keyframes nav-transition {
+  from {top:62px}
+  to {top:55px}
+}
+@keyframes nav-transition{from{top:62px}to{top:55px}}
+
+.dropdown .dropdown-menu {
+  opacity: 0;
+  display: none;
+}
+.dropdown:hover .dropdown-menu, .dropdown-menu-wrapper:hover .dropdown-menu {
+  display: block;
+  opacity: 1;
+  -webkit-animation: nav-transition 200ms ease-in-out normal;
+  animation: nav-transition 200ms ease-in-out normal;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0px;
+  z-index: 1000;
+  display: none;
+  float: left;
+  min-width: 100px;
+  padding: 5px 0;
+  margin: 2px 0 0;
+  list-style: none;
+  font-size: 14px;
+  text-align: left;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border: 1px solid rgba(0,0,0,0.15);
+  border-radius: 4px;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.175);
+  background-clip: padding-box;
+}
+.dropdown-menu .dropdown-menu-item ul li a:hover {
+  border-top: none;
+}
+
+.dropdown-menu li.dropdown-menu-item {
+	margin: 20px;
+	padding: 0;
+	display: block;
+}
+.dropdown-menu li.dropdown-menu-item a {
+	margin: 0;
+	padding: 0;
+  min-height: initial;
+}
+.dropdown-menu .dropdown-menu-item li a:hover {
+	border: none;
+
+}
+
+header.global nav ul .dropdown-menu li a:hover {
+    color: #866cf1;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    border: none;
+}
+
+.caret {
+    width: 3px;
+    height: 3px;
+    padding: 6px 10px;
+    float: right;
+    display: block;
+    background: url("../images/ico/arrow-down-wht.png") no-repeat center center;
+    background-size: 8px;
+}
+
+header.global:hover .caret {
+    width: 3px;
+    height: 3px;
+    padding: 6px 10px;
+    float: right;
+    display: block;
+    background: url("../images/ico/arrow-down-gry.png") no-repeat center center;
+    background-size: 8px;
+}
+
+.dropdown-menu-wrapper {
+    min-height:6px;
+}

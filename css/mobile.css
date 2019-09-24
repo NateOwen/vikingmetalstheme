@@ -1,0 +1,145 @@
+/* ----- MOBILE NAV ----- */
+.mobile {
+    -webkit-transform-style: preserve-3d;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: 999;
+    /*background: rgba(14, 14, 14, 0.97);*/
+	background: rgba(255, 255, 255, 0.97);
+    -webkit-opacity: 1.0;
+    -moz-opacity: 1.0;
+    opacity: 1.0;
+    visibility: visible;
+    transition: all .25s ease-in-out;
+    -moz-transition: all .25s ease-in-out;
+    -webkit-transition: opacity .25s ease-in-out;
+    box-shadow: 1px 1px 1px -1px rgba(14, 14, 14, 0.2);
+}
+.mobile.fade {
+    visibility: hidden;
+    -webkit-opacity: 1.0;
+    -moz-opacity: 1.0;
+    opacity: 1.0;
+}
+.mobile h1, .mobile h1 a {
+    /*color: #fff;*/
+    color: #4c4c4c;
+    font: 700 14px/14px "Montserrat", Helvetica, Arial, san-serif;
+    text-transform: none;
+    margin: 18px 0px 0px 20px;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+}
+.mobile h1 a:hover {
+	color: #e74315;
+}
+.mobile h1 a:hover:after {
+    display: none;
+}
+.mobile .logo a {
+    width: 88px;
+    height: 50px;
+    display: block;
+    position: fixed;
+    left: 20px;
+    top: 0px;
+    margin: 0px;
+    padding: 0px;
+    background: url(../images/img-logo-wht.png) no-repeat center center;
+    background-size: 88px;
+    -webkit-opacity: 1.0;
+    -moz-opacity: 1.0;
+    opacity: 1.0;
+}
+.mobile .close a {
+    display: block;
+    position: fixed;
+    right: 0px;
+    top: 0px;
+    width: 50px;
+    height: 50px;
+    margin: 0px;
+    padding: 0px;
+    background: url(../images/ico/close-drkgry.png) no-repeat center center;
+    background-size: 16px;
+}
+.mobile .close a:hover {
+    background: url(../images/ico/close-gry.png) no-repeat center center;
+    background-size: 16px;
+}
+.mobile .logo a:hover, .mobile .close a:hover {
+    border: none;
+}
+.mobile nav {
+    display: block;
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+    text-align: center;
+    z-index: 102;
+}
+.mobile nav ul {
+    position: relative;
+    display: block;
+    margin: 0px;
+    padding: 0px;
+}
+.mobile nav ul li {
+    font: 700 36px/36px "Montserrat", Helvetica, Arial, san-serif;
+    display: block;
+    width: auto;
+    height: auto;
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+    list-style: none;
+    background: none;
+    -webkit-opacity: 1.0;
+    -moz-opacity: 1.0;
+    opacity: 1.0;
+}
+.mobile nav ul li a {
+    display: inline-block;
+    width: auto;
+    height: auto;
+    text-transform: uppercase;
+    margin: 0px;
+    padding: 20px 0px 20px 0px;
+	/*color: rgba(255, 255, 255, 1.0);*/ 
+	color: #4c4c4c;
+    text-decoration: none;
+    border: none;
+    background: none;
+}
+.mobile nav ul li a:hover {
+    color: #e74315;
+}
+.mobile nav ul li:hover, .mobile nav ul li.active {
+    -webkit-opacity: 1.0;
+    -moz-opacity: 1.0;
+    opacity: 1.0;
+}
+/*.mobile nav ul li:before, .mobile nav ul li a:after {
+    display: none;
+}*/
+.mobile nav ul li:before {
+    content: none;
+}
+.mobile .logo a:hover:before, .mobile .close a:hover:after {
+    display: none;
+}
+
+/* MAX-WIDTH 768px */
+@media screen and (max-width: 768px) {
+}
+
+/* MIN-WIDTH 320px - MAX-WIDTH 480px */
+@media screen and (min-width: 320px) and (max-width: 480px) {
+.mobile nav ul li a {
+    font: 700 20px/20px "Montserrat", Helvetica, Arial, san-serif;
+}
+}

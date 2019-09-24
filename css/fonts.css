@@ -1,0 +1,144 @@
+/* ----- MONTSERRAT ----- */
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
+
+	/*	font: 400 14px/26px "Montserrat", Helvetica, Arial, san-serif;	*/
+
+	/*	Thin 100
+		Thin 100 Italic
+		Extra-light 200
+		Extra-light 200 Italic
+		Light 300
+		Light 300 Italic
+		Regular 400
+		Regular 400 Italic
+		Medium 500
+		Medium 500 Italic
+		Semi-bold 600
+		Semi-bold 600 Italic
+		Bold 700
+		Bold 700 Italic
+		Extra-bold 800
+		Extra-bold 800 Italic
+		Black 900
+		Black 900 Italic */
+
+/* ----- POPPINS ----- */
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
+
+	/*	font: 400 14px/26px "Poppins", Helvetica, Arial, san-serif;	*/
+
+	/*	Thin 100
+		Thin 100 Italic
+		Extra-light 200
+		Extra-light 200 Italic
+		Light 300
+		Light 300 Italic
+		Regular 400
+		Regular 400 Italic
+		Medium 500
+		Medium 500 Italic
+		Semi-bold 600
+		Semi-bold 600 Italic
+		Bold 700
+		Bold 700 Italic
+		Extra-bold 800
+		Extra-bold 800 Italic
+		Black 900
+		Black 900 Italic */
+
+/* ----- PT MONO ----- */
+@import url('https://fonts.googleapis.com/css?family=PT+Mono');
+
+	/*font-family: "PT Mono", monospace;*/
+
+	/*	Regular 400	*/
+
+/* ----- ROKKITT ----- */
+@import url('https://fonts.googleapis.com/css?family=Rokkitt:100,200,300,400,500,600,700,800,900');
+/*font-family: "Rokkitt", serif;*/
+
+	/*	Thin 100
+		Extra-light 200
+		Light 300
+		Regular 400
+		Medium 500
+		Semi-bold 600
+		Bold 700*/
+
+/* ----- STYLES ----- */
+.montserrat {
+    font-family: "Montserrat", Helvetica, Arial, san-serif;
+}
+.poppins {
+    font-family: "Poppins", Helvetica, Arial, san-serif;
+}
+.ptmono {
+    font-family: "PT Mono", monospace;
+}
+.rokkitt {
+    font-family: "Rokkitt", serif;
+}
+.thin {
+    font-weight: 100;
+    font-style: normal;
+}
+.thin-i {
+    font-weight: 100;
+    font-style: italic;
+}
+.extra-light {
+    font-weight: 200;
+}
+.extra-light-i {
+    font-weight: 200;
+    font-style: italic;
+}
+.light {
+    font-weight: 300;
+}
+.light-i {
+    font-weight: 300;
+    font-style: italic;
+}
+.regular {
+    font-weight: 400;
+}
+.regular-i {
+    font-weight: 400;
+    font-style: italic;
+}
+.medium {
+    font-weight: 500;
+}
+.medium-i {
+    font-weight: 500;
+    font-style: italic;
+}
+.semi-bold {
+    font-weight: 600;
+}
+.semi-bold-i {
+    font-weight: 600;
+    font-style: italic;
+}
+.bold {
+    font-weight: 700;
+}
+.bold-i {
+    font-weight: 700;
+    font-style: italic;
+}
+.extra-bold {
+    font-weight: 800;
+}
+.extra-bold-i {
+    font-weight: 800;
+    font-style: italic;
+}
+.black {
+    font-weight: 900;
+}
+.black-i {
+    font-weight: 900;
+    font-style: italic;
+}

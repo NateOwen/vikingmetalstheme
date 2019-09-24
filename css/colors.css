@@ -1,0 +1,125 @@
+/* ----- TEXT HIGHTLIGHT ----- */
+/* Safari */
+::selection {
+    color: #2c2f35;
+    background: #e1e1e1;
+}
+/* Firefox */
+::-moz-selection {
+ color: #2c2f35;
+ background: #e1e1e1;
+}
+
+/* ----- WEBKIT SCROLL BAR ----- */
+/* Scrollbar */ /*It is the main scrollbar container.*/
+::-webkit-scrollbar {
+ width: 4px;
+ overflow-y: scroll;
+ background-color: rgba(236, 236, 236, 0.0);
+}
+/* Track */ /*This style the main track of the scollbar.*/
+::-webkit-scrollbar-track {
+ -webkit-box-shadow: none;
+	 box-shadow: none;
+
+ -webkit-border-radius: 0px;
+ border-radius: 0px;
+ background: #f2f5fa;
+}
+/* Handle */ /*This styles the thumb of the scrollbar.*/
+::-webkit-scrollbar-thumb {
+ background: #2c2f35;
+}
+::-webkit-scrollbar-thumb:hover {
+ background: #f1f1f1;
+ -webkit-box-shadow: none;
+		 box-shadow: none;
+
+}
+/* ----- FORGROUND COLORS ----- */
+.mint {
+    color: #3cd2ac;
+}
+.lhtrgry {
+    color: #f7f7f7;
+}
+.lhtgry {
+    color: #f4f4f4;
+}
+.gry {
+    color: #f1f1f1;
+}
+.medgry {
+    color: #e1e1e1;
+}
+.drkgry {
+    color: #5e5e5e;
+}
+.drkrgry {
+    color: #2c2f35;
+}
+.wht {
+    color: #fff;
+}
+.blk {
+    color: #000;
+}
+.viking-mint {
+	color: #3be4c6;
+}
+.viking-purple {
+	color: #866cf1;
+}
+.viking-med-purple {
+	color: #5663c5;
+}
+.viking-drk-purple {
+	color: #454275;
+}
+
+/* ----- BACKGROUND COLOR ----- */
+.bgmint {
+    background: #3cd2ac;
+}
+.bglhtrgry {
+    background: #f7f7f7;
+}
+.bglhtgry {
+    background: #f4f4f4;
+}
+.bggry {
+    background: #f1f1f1;
+}
+.bgmedgry {
+    background: #e1e1e1;
+}
+.bgdrkgry {
+    background: #d0d0d0;
+}
+.bgdrkrgry {
+    background: #2c2f35;
+}
+.bgwht {
+    background: #fff;
+}
+
+.viking-bgmint {
+	background: #3be4c6;
+}
+.viking-bgpurple {
+	background: #866cf1;
+}
+.viking-bgmed-purple {
+	background: #5663c5;
+}
+.viking-bgdrk-purple {
+	background: #454275;
+}
+.bgdrkorg {
+    background: #e74315;
+}
+.bglhtorg {
+    background: #e88820;
+}
+
+

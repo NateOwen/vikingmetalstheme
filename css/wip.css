@@ -1,0 +1,382 @@
+/* ----- ALERT BAR ----- */
+.alertbar {
+    display: block;
+    position: fixed;
+    margin: 0px;
+    padding: 0px;
+    height: 100px;
+    width: 100%;
+    left: 0px;
+    z-index: 200;
+    background: #DD2476; /* fallback for old browsers */
+    background: -moz-linear-gradient(to left, #DD2476, #eb1370);
+    background: -webkit-linear-gradient(to left, #DD2476, #eb1370);
+    background: -o-linear-gradient(to left, #DD2476, #eb1370);
+    background: -ms-linear-gradient(to left, #DD2476, #eb1370);
+    background: linear-gradient(to left, #DD2476, #eb1370);
+ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#DD2476', endColorstr='#eb1370', GradientType=1 );
+    -webkit-opacity: 0.97;
+    -moz-opacity: 0.97;
+    opacity: 0.97;
+}
+.alertbar .close a {
+    display: block;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    width: 50px;
+    height: 50px;
+    margin: 0px;
+    padding: 0px;
+    background: url(../images/ico/close-wht.png) no-repeat center center;
+    background-size: 16px;
+    -webkit-opacity: 1.0;
+    -moz-opacity: 1.0;
+    opacity: 1.0;
+}
+.alertbar .close a:hover {
+    border: none;
+    -webkit-opacity: 0.7;
+    -moz-opacity: 0.7;
+    opacity: 0.7;
+}
+.alertbar .alert {
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    resize: vertical;
+}
+.alertbar .alert p {
+    margin: 5px 50px 5px 50px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+/* ----- Link Animation 1 ----- */
+a.hit-n-run {
+    display: inline-block;
+    color: #b7203d;
+    position: relative;
+    padding-bottom: 2px;
+    text-decoration: none;/*border-bottom: 4px solid rgba(64, 64, 64, 0.1);*/
+}
+a.hit-n-run:before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    height: 4px;
+    width: 0;
+    transition: width 0s ease, background .3s ease;
+}
+a.hit-n-run:after {
+    content: '';
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: -1px;
+    height: 4px;
+    width: 0;
+    background: #0e0e0e;
+    transition: width .3s ease;
+}
+a.hit-n-run:hover:before {
+    width: 100%;
+    background: #0e0e0e;
+    transition: width .3s ease;
+}
+a.hit-n-run:hover:after {
+    width: 100%;
+    background: transparent;
+    transition: all 0s ease;
+}
+/* ----- Link Animation 2 ----- */
+a.one-way {
+    text-decoration: none;
+    position: relative;
+    color: #b7203d;
+    border-bottom: 1px solid rgba(64, 64, 64, 0.1);
+}
+a.one-way:after {
+    content: '';
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 0%;
+    border-bottom: 1px solid #b7203d;
+    transition: 0.3s;
+}
+a.one-way:hover:after {
+    width: 100%;
+}
+/* ----- Link Animation 3 ----- */
+a.look-both-ways {
+    display: inline-block;
+    text-decoration: none;
+    position: relative;
+    color: #b7203d;
+    padding-bottom: 2px;
+    border-bottom: 1px solid rgba(64, 64, 64, 0.1);
+}
+a.look-both-ways:after {
+    content: '';
+    height: 1px;
+    width: 0%;
+    display: block;
+    margin: auto;
+    background: transparent;
+    transition: width .3s ease, background-color .3s ease;
+    position: relative;
+    bottom: -3px;
+}
+a.look-both-ways:hover:after {
+    width: 100%;
+    background: #b7203d;
+}
+/* ----- Link Animation 4 ----- */
+a.strike {
+    text-decoration: none;
+    position: relative;
+    color: #4c4c4c;
+    border-bottom: 1px solid rgba(0,0,0,0);
+}
+a.strike:after {
+    content: '';
+    position: absolute;
+    bottom: 4px;
+    left: 0;
+    width: 0%;
+    color: rgba(0,0,0,0);
+    border-bottom: 2px solid #e15517;
+    transition: 0.3s;
+}
+a.strike:hover:after {
+    width: 100%;
+}
+
+
+.test {
+  width: auto;
+  height: auto;
+  display: inline-block;
+  position: relative;
+  padding-bottom: 5px;
+  margin-right: 50px;
+}
+.test:before {
+    content: '';
+    width: 100%;
+    height: 1px;
+    background-color: mediumorchid;
+    display: block;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: 0.3s transform ease-in-out,
+                0.3s visibility ease-in-out;
+    transform-origin: right bottom;
+  }
+
+.test:hover:before {
+    visibility: visible;
+    transform: scaleX(1);
+    transform-origin: left bottom;
+  }
+
+
+
+
+/* ------------------------- Start Arrow ------------------------- */
+
+.start a.lht {
+    background: url(../images/ico/arrow-down-wht.png) no-repeat center center;
+}
+.start a.drk {
+    background: url(../images/ico/arrow-down-gry.png) no-repeat center center;
+}
+.end a.lht {
+    background: url(../images/ico/arrow-up-wht.png) no-repeat center center;
+}
+.end a.drk {
+    background: url(../images/ico/arrow-up-gry.png) no-repeat center center;
+}
+.start a.bounce {
+    -webkit-animation: bounce 2s infinite;
+}
+.end a.flash {
+    -webkit-animation: flash 4s infinite;
+}
+.start a.lht, .start a.drk, .end a.lht, .end a.drk {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    margin: 0px auto;
+    padding: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    -webkit-opacity: 1.0;
+    -moz-opacity: 1.0;
+    opacity: 1.0;
+    background-size: 16px;
+}
+.start a:hover, .end a:hover {
+    border: none;
+    -webkit-opacity: 0.7;
+    -moz-opacity: 0.7;
+    opacity: 0.7;
+}
+/* ----- HERO ----- */
+section.hero {
+    position: relative;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+section.hero.intro {
+    color: #fff;/*background: url(../images/bg-hero-blue.jpg) no-repeat left top;
+	background-color: #00b1ff;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;*/
+}
+section.hero img {
+    width: 300px;
+    margin: 0px 0px 0px 0px;
+}
+section.hero div + h5 {
+    margin: 4px 0px 4px 0px;
+    letter-spacing: 32px;
+    margin-right: -32px;
+}
+section.hero .start a {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    margin: 0px 0px 0px -25px;
+    padding: 0px;
+    left: 50%;
+    bottom: 0px;
+    -webkit-animation: flash 4s infinite;
+    background: url(../images/ico/arrow-down-wht.png) no-repeat center center;
+    background-size: 16px;
+    -webkit-opacity: 1.0;
+    -moz-opacity: 1.0;
+    opacity: 1.0;
+}
+section.hero .start a:hover {
+    border: none;
+    -webkit-opacity: 0.7;
+    -moz-opacity: 0.7;
+    opacity: 0.7;
+}
+/* ------------------------- ASIDE ------------------------- */
+aside {
+    float: right;
+    width: 240px;
+    margin: 10px 40px 10px 40px;
+    padding: 10px 0px 10px 0px;
+    text-align: left;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    display: block;
+}
+aside.drk {
+    background: #4c4c4c;
+}
+aside.lht {
+    background: rgba(245, 245, 245, 1.0);
+}
+aside ul {
+    display: block;
+    margin: 0px 0px 0px 20px;
+    padding: 0px;
+}
+aside ul li {
+    display: list-item;
+    margin: 0px;
+    padding: 0px;
+    font: 700 12px/12px "Montserrat", Helvetica, Arial, san-serif;
+    list-style-type: none;
+}
+aside ul li a {
+    display: block;
+    margin: 0px;
+    padding: 10px 40px 10px 0px;
+}
+aside ul li a em {
+    font: 400 Italic 10px/14px "Lato", Helvetica, Arial, san-serif;
+}
+aside.drk ul li {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+aside.lht ul li {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+aside.drk ul li a {
+    color: rgba(255, 255, 255, 1.0);
+    background: url(../images/ico/arrow-right-wht.png) no-repeat calc(100% - 16px) calc(100% - 50%);
+}
+aside.lht ul li a {
+    color: #4c4c4c;
+    background: url(../images/ico/arrow-right-gry.png) no-repeat calc(100% - 16px) calc(100% - 50%);
+}
+aside.drk ul li a:hover {
+    color: rgba(0, 177, 255, 1.0);
+    background: url(../images/ico/arrow-right-wht.png) no-repeat calc(100% - 16px) calc(100% - 50%);
+}
+aside.lht ul li a:hover {
+    color: rgba(0, 177, 255, 1.0);
+    background: url(../images/ico/arrow-right-gry.png) no-repeat calc(100% - 16px) calc(100% - 50%);
+}
+aside.drk ul li:last-child, aside.lht ul li:last-child {
+    text-decoration: none;
+    border: none;
+}
+aside.drk ul li a.active, aside.lht ul li a.active {
+    color: rgba(0, 177, 255, 1.0);
+    background: none;
+}
+aside.drk ul li a, aside.lht ul li a, aside.drk ul li a:hover, aside.lht ul li a:hover {
+    background-size: 10px;
+}
+body.mockup p, body.mockup h1, body.mockup h2, body.mockup h3, body.mockup h4, body.mockup h5, body.mockup h6, body.mockup ul li, body.mockup ol li, body.mockup a {
+    font-family: "BLOKKNeue-Regular", serif;
+}
+/*ol {
+    font: 400 12px/24px "Poppins", Helvetica, Arial, san-serif;
+    list-style-type: none;
+    margin: 0;
+    margin: 0px 40px 0px 40px;
+    padding: 5px 10px 5px 10px;
+    counter-reset: li-counter;
+}
+ol > li {
+    position: relative;
+    margin-bottom: 10px;
+    padding-left: 30px;
+    text-align: left;
+}
+ol > li:before {
+    position: absolute;
+    top: 2px;
+    width: 20px;
+    height: 20px;
+    left: 0px;
+    text-align: center;
+    color: #fff;
+    padding: 0px;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    background-color: rgba(14, 14, 14, 1.0);
+    content: counter(li-counter);
+    counter-increment: li-counter;
+    font: 500 10px/22px "Poppins", Helvetica, Arial, san-serif;
+}*/

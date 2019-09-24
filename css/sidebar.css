@@ -1,0 +1,199 @@
+/* ----- SIDEBAR ----- */
+.sidebar {
+    display: block;
+    float: left;
+    width: 250px;
+    top: 0;
+    overflow: hidden;
+    bottom: 0;
+    left: 0;
+    position: fixed;
+    margin: 0px;
+    min-height: 100%;
+    z-index: 99;
+    background: #fff;
+    /*border-right: 1px solid rgba(236, 236, 236, 0.6);*/
+    box-shadow: inset -1px 0 0px 0px rgba(236, 236, 236, 0.6);
+    -webkit-transition: all 0.30s ease-in-out;
+    -moz-transition: all 0.30s ease-in-out;
+    -ms-transition: all 0.30s ease-in-out;
+    -o-transition: all 0.30s ease-in-out;
+}
+.sidebar:hover {
+    background: #2c2f35;
+    box-shadow: inset -1px 0 0px 0px rgba(236, 236, 236, 0.0);
+}
+.sidebar:hover nav ul li a {
+    color: #fff;
+}
+.sidebar:hover nav ul li a:hover {
+    color: #3cd2ac;
+    -webkit-box-shadow: inset 6px 0px 0px 0px #3cd2ac;
+    -moz-box-shadow: inset 6px 0px 0px 0px #3cd2ac;
+    box-shadow: inset 6px 0px 0px 0px #3cd2ac;
+    -webkit-transition: all 0.30s ease-in-out;
+    -moz-transition: all 0.30s ease-in-out;
+    -ms-transition: all 0.30s ease-in-out;
+    -o-transition: all 0.30s ease-in-out;
+}
+.sidebar:hover, .sidebar:focus {
+    overflow-y: auto;
+}
+.sidebar:hover::-webkit-scrollbar, .sidebar:focus::-webkit-scrollbar {
+ width: 0px;
+}
+.sidebar nav {
+    display: block;
+    width: 100%;
+    padding: 0px;
+    height: 100%;
+    position: absolute;
+    margin: 0px 0px 0px 0px;
+}
+.sidebar nav ul {
+    display: block;
+    margin: 0px 0px 40px 0px;
+    padding: 0px;
+}
+.sidebar nav ul li {
+    /*font: 500 11px/12px "Montserrat", Helvetica, Arial, san-serif;*/
+    font: 500 12px/12px "Montserrat", Helvetica, Arial, san-serif;
+    display: block;
+    margin: 0px;
+    padding: 0px;
+    list-style: none;/*-webkit-box-shadow: 0px 1px 0px 0px rgba(236, 236, 236, 0.6);
+    -moz-box-shadow: 0px 1px 0px 0px rgba(236, 236, 236, 0.6);
+    box-shadow: 0px 1px 0px 0px rgba(236, 236, 236, 0.6);*/
+}
+.sidebar nav ul li.head {
+    /*font: 500 11px/12px "Montserrat", Helvetica, Arial, san-serif;*/
+    font: 400 10px/12px "Poppins", Helvetica, Arial, san-serif;
+    text-transform: uppercase;
+    color: #b8c0ce;
+    padding: 15px 40px 15px 40px;
+    letter-spacing: 1px;
+    position: relative;
+}
+.sidebar nav ul li.head:before {
+    content: "";
+    display: block;
+    width: 10px;
+    height: 1px;
+    background: #b8c0ce;
+    top: 7px;
+    left: 40px;
+    z-index: 1;
+    position: absolute;
+}
+/*.sidebar nav ul li:first-child {
+    -webkit-box-shadow: 0px 0px 0px 1px rgba(236, 236, 236, 0.6);
+    -moz-box-shadow: 0px 0px 0px 1px rgba(236, 236, 236, 0.6);
+    box-shadow: 0px 0px 0px 1px rgba(236, 236, 236, 0.6);
+}
+.sidebar nav ul li a {
+    display: inline-block;
+    text-transform: uppercase;
+    margin: 0px;
+    padding: 20px;
+    width: 100%;
+    color: #0e0e0e;
+    text-decoration: none;
+    border: none;
+    background: none;
+}*/
+
+.sidebar .logo {
+    width: 60px;
+    height: 60px;
+    margin: 40px auto 40px auto;
+}
+.sidebar .logo a {
+    width: 60px;
+    height: 60px;
+    margin: 0 auto;
+    padding: 0px;
+    display: block;
+    background: url(../images/img-noizlabz-dot-logo-wht.png) no-repeat center center;
+    background-size: 36px;
+    background-color: #3cd2ac;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+}
+.sidebar .logo a:after {
+    display: none;
+}
+.sidebar .logo a:hover {
+    width: 60px;
+    height: 60px;
+    border: none;
+    background: url(../images/img-noizlabz-dot-logo-wht.png) no-repeat center center;
+    background-size: 36px;
+    background-color: #69f5c6;
+}
+.sidebar nav ul li a {
+    display: inline-block;
+    text-transform: none;
+    margin: 0px;
+    padding: 15px 40px 15px 40px;
+    width: 100%;
+    color: #0e0e0e;
+    text-decoration: none;
+    border: none;
+    background: none;
+}
+.sidebar nav ul li a:hover {
+    color: #3cd2ac;
+    -webkit-box-shadow: inset 6px 0px 0px 0px #3cd2ac;
+    -moz-box-shadow: inset 6px 0px 0px 0px #3cd2ac;
+    box-shadow: inset 6px 0px 0px 0px #3cd2ac;
+    -webkit-transition: all 0.30s ease-in-out;
+    -moz-transition: all 0.30s ease-in-out;
+    -ms-transition: all 0.30s ease-in-out;
+    -o-transition: all 0.30s ease-in-out;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    background: rgba(184, 192, 206, 0.05);
+}
+.sidebar nav ul li a.active {
+    color: #3cd2ac;
+    /*background: rgba(236, 236, 236, 0.2);*/
+    background: rgba(184, 192, 206, 0.1);
+    -webkit-box-shadow: inset 6px 0px 0px 0px #3cd2ac;
+    -moz-box-shadow: inset 6px 0px 0px 0px #3cd2ac;
+    box-shadow: inset 6px 0px 0px 0px #3cd2ac;
+    -webkit-transition: all 0.30s ease-in-out;
+    -moz-transition: all 0.30s ease-in-out;
+    -ms-transition: all 0.30s ease-in-out;
+    -o-transition: all 0.30s ease-in-out;
+}
+.sidebar nav ul li:before {
+    content: none;
+}
+.sidebar nav a:hover:after {
+    display: none;
+}
+.pushover {
+    width: calc(100% - 250px);
+    display: inline-block;
+    float: right;
+    position: relative;
+}
+
+/* MAX-WIDTH 1024px */
+@media screen and (max-width: 1024px) {
+}
+
+/* MAX-WIDTH 768px */
+@media screen and (max-width: 768px) {
+.sidebar {
+    display: none;
+}
+.pushover {
+    width: 100%;
+}
+}
+
+/* MIN-WIDTH 320px - MAX-WIDTH 480px */
+@media screen and (min-width: 320px) and (max-width: 480px) {
+}

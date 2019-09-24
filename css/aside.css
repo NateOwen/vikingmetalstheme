@@ -1,0 +1,127 @@
+/* ----- SPINE ----- */
+aside {
+	z-index: 98;
+	margin: 0px;
+	padding: 0px;
+	width: 80px;
+	left: 0px;
+	top: 0px;
+	display: flex;
+	/*align-items: stretch;
+	display: flex;*/
+	-webkit-flex-direction: column;
+	flex-direction: column;
+	background: rgba(255, 255, 255, 0.97);
+	border-right: solid 1px rgba(236, 236, 236, 0.6);
+	-webkit-transition-duration: 0.5s;
+	transition-duration: 0.5s;
+}
+
+aside h1 {
+	color: #4c4c4c;
+	-webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  transform: rotate(90deg);
+width: 200px;
+    height: 80px;
+	background: #C90C0F;
+	font: 700 18px/18px "Montserrat", Helvetica, Arial, san-serif;
+	left: 0px;
+	top: 0px;
+	margin: 0px;
+	padding: 0px;
+	display: block;
+	float: left;
+}
+aside .logo a {
+	width: 80px;
+	height: 80px;
+	display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  text-align: center;
+	margin: 0px auto 0px auto;
+	padding: 0px;
+	position: fixed;
+
+	left: 0px;
+	top: 0px;
+	background: url(../images/img-stack-logo-gry.png) no-repeat center center;
+	background-size: 30px;
+}
+aside .settings a {
+	width: 40px;
+	height: 40px;
+	margin: 10px 20px 5px 20px;
+	position: fixed;
+	left: 0px;
+	bottom: 100px;
+	background: url(../images/ico/settings-gry.png) no-repeat center center;
+	background-size: 16px;
+	-webkit-opacity: 0.6;
+	-moz-opacity: 0.6;
+	opacity: 0.6;
+}
+aside .dribbble a {
+	width: 40px;
+	height: 40px;
+	margin: 10px 20px 5px 20px;
+	position: fixed;
+	left: 0px;
+	bottom: 50px;
+	background: url(../images/ico/dribbble-gry-new.png) no-repeat center center;
+	background-size: 36px;
+	-webkit-opacity: 0.6;
+	-moz-opacity: 0.6;
+	opacity: 0.6;
+}
+aside .twitter a {
+	width: 40px;
+	height: 40px;
+	margin: 5px 20px 10px 20px;
+	position: fixed;
+	left: 0px;
+	bottom: 0px;
+	background: url(../images/ico/twitter-gry-new.png) no-repeat center center;
+	background-size: 36px;
+	-webkit-opacity: 0.6;
+	-moz-opacity: 0.6;
+	opacity: 0.6;
+}
+
+aside .settings a:hover, aside .dribbble a:hover, aside .twitter a:hover {
+	border: none;
+	-webkit-opacity: 1.0;
+	-moz-opacity: 1.0;
+	opacity: 1.0;
+}
+
+aside:hover {
+	width: 200px;
+	cursor: pointer;
+
+  -webkit-transition: all 0.7s ease;
+transition: all 0.7s ease;
+	background: rgba(34, 34, 34, 1.0);
+	border-right: rgba(236, 236, 236, 0.0);
+}
+
+
+/* ------------------------- MEDIA SCREEN ------------------------- */
+@media screen and (max-width: 768px) {
+aside {
+	display: none;
+}
+}
+@media screen and (min-width: 320px) and (max-width: 480px) {
+aside {
+	display: none;
+}
+}

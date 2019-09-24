@@ -1,0 +1,222 @@
+/* ----- HEADER GLOBAL BAR ----- */
+header.global {
+    display: block;
+    position: fixed;
+    margin: 0px;
+    padding: 0px;
+    height: 50px;
+    width: 100%;
+    top: 4px;
+    right: 0px;
+    z-index: 97;
+    border-bottom: solid 1px rgba(236, 236, 236, 0.0);
+    transition: all 0.4s ease;
+}
+header.global:hover {
+    background: rgba(255, 255, 255, 0.97);
+    box-shadow: 0 4px 40px 0 rgba(0,0,0,.07);
+}
+header.global:hover nav ul li a {
+    	color: #4c4c4c;
+
+}
+header.global:hover h1, header.global:hover h1 a {
+    color: #4c4c4c;
+}
+header.global:hover h1:hover, header.global:hover h1 a:hover {
+    color: #e74315;
+}
+
+header.global .logo a {
+    width: 36px;
+    height: 36px;
+    margin: 7px 0px 7px 20px;
+    padding: 0px;
+    float: left;
+    display: block;
+    background: url("../images/img-viking-logo-wht.png") no-repeat center center;
+    background-size: 36px;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+}
+header.global.sticky {
+    position: fixed;
+    background: rgba(255, 255, 255, 0.97);
+    transition: all 0.4s ease;
+    box-shadow: 0 4px 40px 0 rgba(0,0,0,.07);
+}
+header.global.sticky:hover {
+    background: rgba(255, 255, 255, 1);
+    box-shadow: 0 4px 40px 0 rgba(0,0,0,.07);
+}
+header.global nav {
+    display: block;
+    float: right;
+    margin: 0px;
+    padding: 0px 5px 0px 5px;
+}
+header.global nav ul {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+    display: block;
+}
+header.global nav ul li {
+    padding: 0px;
+    margin: 0px;
+    float: left;
+}
+header.global nav ul li:before, header.global nav ul li a:after, header.global.sticky nav ul li a:after {
+    display: none;
+}
+header.global nav ul li a {
+    font: 500 /*700*/ 11px/12px "Montserrat", Helvetica, Arial, san-serif;
+    letter-spacing: 1px;
+    min-height: 50px;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: block;
+    padding: 18px 2px 0px 4px;
+    margin: 0px 10px 0px 10px;
+    color: #fff;
+	/*color: #0e0e0e;*/
+    border: none;
+    box-shadow: none;
+    -webkit-transition: all 0.30s ease-in-out;
+    -moz-transition: all 0.30s ease-in-out;
+    -ms-transition: all 0.30s ease-in-out;
+    -o-transition: all 0.30s ease-in-out;
+}
+header.global nav ul li a:hover {
+    color: #e74315;
+    -webkit-box-shadow: inset 0px 0px 0px 0px #e74315;
+    -moz-box-shadow: inset 0px 0px 0px 0px #e74315;
+    box-shadow: inset 0px 6px 0px 0px #e74315;
+    border: none;
+}
+header.global nav ul li a.active, header.global.sticky nav ul li a.active {
+    color: #3cd2ac;
+    -webkit-box-shadow: inset 0px 0px 0px 0px #e74315;
+    -moz-box-shadow: inset 0px 0px 0px 0px #e74315;
+    box-shadow: inset 0px 6px 0px 0px #e74315;
+    border: none;
+}
+header.global.sticky .logo a {
+    background: url(../images/img-viking-logo-mint.png) no-repeat center center;
+    background-size: 36px;
+}
+header.global.sticky .menu a {
+    background: url(../images/ico/menu-drkgry.png) no-repeat center center;
+    background-size: 16px;
+}
+header.global.sticky .menu a:hover {
+    background: url(../images/ico/menu-mint.png) no-repeat center center;
+    background-size: 16px;
+}
+header.global.sticky .menu a:hover:after {
+    display: none;
+}
+header.global.sticky nav ul li a {
+    color: #4c4c4c;
+    box-shadow: none;
+    -webkit-transition: all 0.30s ease-in-out;
+    -moz-transition: all 0.30s ease-in-out;
+    -ms-transition: all 0.30s ease-in-out;
+    -o-transition: all 0.30s ease-in-out;
+}
+header.global.sticky nav ul li a:hover {
+    color: #e74315;
+    /*border-top: solid 4px #3cd2ac;*/
+    -webkit-box-shadow: inset 0px 0px 0px 0px #e74315;
+    -moz-box-shadow: inset 0px 0px 0px 0px #e74315;
+    box-shadow: inset 0px 6px 0px 0px #e74315;
+    border: none;
+}
+header.global h1 {
+    font: 700 14px/14px "Montserrat", Helvetica, Arial, san-serif;
+    text-transform: none;
+    margin: 18px 0px 0px 20px;
+    float: left;
+}
+header.global h1 a {
+    font: 700 14px/14px "Montserrat", Helvetica, Arial, san-serif;
+    text-transform: none;
+    margin: 0px 0px 0px 0px;
+    float: left;
+}
+header.global h1, header.global h1 a {
+    color: #fff;
+}
+header.global.sticky h1, header.global.sticky h1 a {
+    color: #2c2f35;
+}
+header.global h1 a:hover, header.global.sticky h1 a:hover {
+    color: #3cd2ac;
+}
+header.global h1 a:hover:after, header.global.sticky h1 a:hover:after {
+    display: none;
+}
+
+
+
+header.global:hover .logo a {
+    border: none;
+    background: url(../images/img-viking-logo-mint.png) no-repeat center center;
+    background-size: 36px;
+}
+header.global:hover .logo a:hover {
+    border: none;
+    background: url(../images/img-viking-logo-purple.png) no-repeat center center;
+    background-size: 36px;
+}
+
+
+header.global .menu, header.global .menu a {
+    display: none;
+    width: 50px;
+    height: 50px;
+    margin: 0px;
+    padding: 0px;
+    float: right;
+    background: url(../images/ico/menu-drkgry.png) no-repeat center center;
+    background-size: 16px;
+}
+header.global .menu:hover, header.global .menu a:hover {
+    background: url(../images/ico/menu-gry.png) no-repeat center center;
+    background-size: 16px;
+}
+header.global .menu:hover:after, header.global .menu a:hover:after {
+    display: none;
+}
+header.global .logo a:hover {
+    border: none;
+    background: url(../images/img-viking-logo-purple.png) no-repeat center center;
+    background-size: 36px;
+}
+header.global.sticky .logo a:hover {
+    border: none;
+    background: url(../images/img-viking-logo-purple.png) no-repeat center center;
+    background-size: 36px;
+}
+header.global .logo a:after {
+    display: none;
+}
+/* ----- MEDIA SCREEN ----- */
+
+/* MAX-WIDTH 768px */
+@media screen and (max-width: 768px) {
+header.global {
+    width: 100%;
+}
+header.global nav ul {
+    display: none;
+}
+header.global .menu, header.global .menu a {
+    display: block;
+}
+header.global .logo a {
+    display: block;
+}
+}

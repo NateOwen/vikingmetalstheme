@@ -1,0 +1,219 @@
+section.hero h1 {
+    font: 800 80px/70px "Montserrat", Helvetica, Arial, san-serif;
+}
+section.hero h1.subtitle {
+    font: 700 12px/14px "Montserrat", Helvetica, Arial, san-serif;
+    letter-spacing: 4px;
+    margin: 10px 40px 20px 40px;
+    padding: 0px;
+}
+
+.colorbar {
+	position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    z-index: 9999;
+background: #e88820; /* Old browsers */
+background: -moz-linear-gradient(left,  #e88820 0%, #e74315 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left,  #e88820 0%,#e74315 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right,  #e88820 0%,#e74315 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e88820', endColorstr='#e74315',GradientType=1 ); /* IE6-9 */
+
+	
+}
+
+.img-break {
+	height: 240px;
+	background-color: #4c4c4c;
+}
+.img-break.img1 {
+    background: url(../images/img-break-1.jpg) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.glyph {
+    font-size: 80px;
+    font-weight: 400;
+    line-height: 80px;
+}
+ul.styles {
+    display: block;
+    margin: 20px 40px 20px 40px;
+}
+ul.styles li {
+    display: block;
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+ul.styles li:before {
+    content: none;
+}
+.bgpattern {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+.bg-ptrn-dots {
+    background-image: -webkit-repeating-radial-gradient(center center, rgba(0,0,0,.1), rgba(0,0,0,.1) 1px, transparent 1px, transparent 100%);
+    background-image: -moz-repeating-radial-gradient(center center, rgba(0,0,0,.1), rgba(0,0,0,.1) 1px, transparent 1px, transparent 100%);
+    background-image: -ms-repeating-radial-gradient(center center, rgba(0,0,0,.1), rgba(0,0,0,.1) 1px, transparent 1px, transparent 100%);
+    background-image: repeating-radial-gradient(center center, rgba(0,0,0,.1), rgba(0,0,0,.1) 1px, transparent 1px, transparent 100%);
+    -webkit-background-size: 50px 50px;
+    -moz-background-size: 50px 50px;
+    background-size: 50px 50px;
+}
+.bg-ptrn-x {
+    background: url(../images/bg-ptrn-x.png) repeat center center;
+    background-size: 50px;
+}
+.bg-ptrn-plus {
+    background: url(../images/bg-ptrn-plus.png) repeat center center;
+    background-size: 50px;
+}
+.bg-ptrn-logo {
+    background: url(../images/bg-ptrn-logo.png) repeat center center;
+    background-size: 50px;
+}
+section.hero.home {
+    background: url("../images/bg-hero.jpg") no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+section.hero.poly {
+    background: url(../images/bg-hero-poly-pattern-rev.jpg) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+/* ----- Mouse Scroll ----- */
+.mouse-scroll a {
+    display: block;
+    width: 16px;
+    margin: 0 auto;
+    /* left: 0; */
+    top: -70px;
+    /* right: 0; */
+    z-index: 1;
+    height: 26px;
+    /* border: 2px solid #0e0e0e; */
+	
+    -webkit-box-shadow: 0px 0px 0px 2px rgba(0,0,0,0.1);
+    -moz-box-shadow: 0px 0px 0px 2px rgba(0,0,0,0.1);
+    box-shadow: 0px 0px 0px 2px rgba(0,0,0,0.1);
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    border-radius: 50px;
+}
+.mouse-scroll a:hover {
+    /*border: 2px solid #3cd2ac;*/
+    -webkit-box-shadow: 0px 0px 0px 2px #3cd2ac;
+    -moz-box-shadow: 0px 0px 0px 2px #3cd2ac;
+    box-shadow: 0px 0px 0px 2px #3cd2ac;
+}
+.mouse-scroll a:after {
+    display: none;
+}
+.mouse-scroll a:before {
+    content: "";
+    position: absolute;
+    margin: 0 auto;
+    left: 0;
+    top: 14px;
+    right: 0;
+    width: 2px;
+    z-index: 1;
+    background-color: #0e0e0e;
+    height: 5px;
+    transform: translatey(0px);
+    animation: float 4s ease infinite;
+}
+.mouse-scroll a:hover:before {
+    background-color: #3cd2ac;
+}
+ @keyframes float {
+ 0% {
+ transform: translatey(0px);
+}
+ 50% {
+ transform: translatey(-10px);
+}
+ 100% {
+ transform: translatey(0px);
+}
+}
+.feat-wrapper {
+    display: block;
+    position: relative;
+    z-index: inherit;
+    background: #ccc;
+    margin: 0px;
+}
+.feat-entry-container {
+    float: left;
+    position: relative;
+    width: 40%;
+    padding-top: 40%;
+    background: #ccc;
+}
+.feat-entry-container-sm {
+    float: left;
+    position: relative;
+    width: 20%;
+    padding-top: 20%;
+    background: #999;
+}
+
+/* MAX-WIDTH 1440px */
+@media screen and (max-width: 1440px) {
+	section.hero h1 {
+    font: 800 70px/60px "Montserrat", Helvetica, Arial, san-serif;
+}
+}
+
+/* MAX-WIDTH 1024px */
+@media screen and (max-width: 1024px) {
+	section.hero h1 {
+    font: 800 60px/50px "Montserrat", Helvetica, Arial, san-serif;
+}
+}
+
+/* MAX-WIDTH 768px */
+@media screen and (max-width: 768px) {
+.feat-entry-container {
+    float: left;
+    position: relative;
+    width: 100%;
+    padding-top: 100%;
+    background: #ccc;
+}
+.feat-entry-container-sm {
+    float: left;
+    position: relative;
+    width: 50%;
+    padding-top: 50%;
+    background: #999;
+}
+section.hero h1 {
+    font: 800 50px/40px "Montserrat", Helvetica, Arial, san-serif;
+}
+}
+
+/* MIN-WIDTH 320px - MAX-WIDTH 480px */
+@media screen and (min-width: 320px) and (max-width: 480px) {
+ul.styles {
+    margin: 20px 30px 20px 30px;
+}
+}
